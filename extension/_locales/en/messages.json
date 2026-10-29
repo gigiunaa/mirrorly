@@ -1,0 +1,31 @@
+{
+  "appName": { "message": "Mirrorly" },
+  "appDescription": { "message": "Look in video calls the way you see yourself in the mirror. For Google Meet and Zoom in the browser." },
+
+  "outgoingTitle": { "message": "What others see" },
+  "outgoingNormal": { "message": "Normal" },
+  "outgoingMirrored": { "message": "Mirrored" },
+  "outgoingHint": { "message": "Mirrored is how you see yourself in a mirror." },
+
+  "selfViewTitle": { "message": "What I see of myself" },
+  "selfViewMatch": { "message": "Same as others" },
+  "selfViewMirror": { "message": "Mirrored" },
+
+  "statusOtherSite": { "message": "Open Google Meet or Zoom in the browser." },
+  "statusActive": {
+    "message": "On for $SITE$. Changes apply instantly, even during a call.",
+    "placeholders": { "site": { "content": "$1" } }
+  },
+  "statusReload": {
+    "message": "Reload this $SITE$ tab to turn it on.",
+    "placeholders": { "site": { "content": "$1" } }
+  },
+
+  "welcomeTitle": { "message": "Mirrorly is installed" },
+  "welcomeLead": { "message": "In video calls, people can now see you the way you see yourself in a mirror." },
+  "welcomeStep1": { "message": "Click the puzzle icon in Chrome's toolbar and pin Mirrorly." },
+  "welcomeStep2": { "message": "Choose what others see, and what you see of yourself." },
+  "welcomeStep3": { "message": "If Google Meet or Zoom is already open, reload that tab." },
+  "welcomeZoom": { "message": "Works in Google Meet and the Zoom web client. The Zoom desktop app is coming soon." },
+  "welcomePrivacy": { "message": "Everything happens on your computer. Mirrorly sends no video and no data anywhere." }
+}

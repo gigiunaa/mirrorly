@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirrorly</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- A face that is clearly left/right asymmetric: hair swept to one side, a beauty mark. -->
+      <symbol id="face" viewBox="0 0 64 64">
+        <circle cx="32" cy="34" r="20" class="skin"/>
+        <path class="hair" d="M12 32c0-14 10-22 22-22 10 0 18 6 18 14-6-6-14-8-22-6-6 2-12 8-18 14z"/>
+        <circle cx="25" cy="36" r="2.4" class="feature"/>
+        <circle cx="39" cy="36" r="2.4" class="feature"/>
+        <path class="mouth" d="M25 44c4 4 10 4 14 0"/>
+        <circle cx="43" cy="44" r="1.6" class="feature"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="top">
+    <img src="../icons/icon32.png" width="24" height="24" alt="">
+    <h1 data-i18n="appName">Mirrorly</h1>
+  </header>
+
+  <form id="form">
+    <fieldset>
+      <legend data-i18n="outgoingTitle">What others see</legend>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="outgoing" value="normal">
+          <svg class="face" data-orientation="normal" aria-hidden="true"><use href="#face"/></svg>
+          <span data-i18n="outgoingNormal">Normal</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="outgoing" value="mirrored">
+          <svg class="face" data-orientation="mirrored" aria-hidden="true"><use href="#face"/></svg>
+          <span data-i18n="outgoingMirrored">Mirrored</span>
+        </label>
+      </div>
+      <p class="hint" data-i18n="outgoingHint">Mirrored is how you see yourself in a mirror.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="selfViewTitle">What I see of myself</legend>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="selfView" value="match">
+          <svg class="face" id="selfMatchFace" aria-hidden="true"><use href="#face"/></svg>
+          <span data-i18n="selfViewMatch">Same as others</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="selfView" value="mirror">
+          <svg class="face" id="selfMirrorFace" aria-hidden="true"><use href="#face"/></svg>
+          <span data-i18n="selfViewMirror">Mirrored</span>
+        </label>
+      </div>
+    </fieldset>
+  </form>
+
+  <footer class="status" id="status" role="status">
+    <span class="dot" aria-hidden="true"></span>
+    <span id="statusText"></span>
+  </footer>
+
+  <script src="../src/settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "appName": { "message": "Mirrorly" },
+  "appDescription": { "message": "ვიდეოზარში გამოჩნდი ისე, როგორც სარკეში ხედავ თავს. Google Meet და Zoom ბრაუზერში." },
+
+  "outgoingTitle": { "message": "რას ხედავენ სხვები" },
+  "outgoingNormal": { "message": "ჩვეულებრივი" },
+  "outgoingMirrored": { "message": "სარკისებური" },
+  "outgoingHint": { "message": "სარკისებური — ისე, როგორც სარკეში ხედავ თავს." },
+
+  "selfViewTitle": { "message": "როგორ ვხედავ საკუთარ თავს" },
+  "selfViewMatch": { "message": "როგორც სხვები" },
+  "selfViewMirror": { "message": "სარკისებურად" },
+
+  "statusOtherSite": { "message": "გახსენი Google Meet ან Zoom ბრაუზერში." },
+  "statusActive": {
+    "message": "ჩართულია: $SITE$. ცვლილება მაშინვე მოქმედებს, ზარის დროსაც.",
+    "placeholders": { "site": { "content": "$1" } }
+  },
+  "statusReload": {
+    "message": "ჩასართავად განაახლე ეს გვერდი ($SITE$).",
+    "placeholders": { "site": { "content": "$1" } }
+  },
+
+  "welcomeTitle": { "message": "Mirrorly დაინსტალირდა" },
+  "welcomeLead": { "message": "ვიდეოზარში სხვები ახლა დაგინახავენ ისე, როგორც შენ ხედავ თავს სარკეში." },
+  "welcomeStep1": { "message": "Chrome-ის ზედა ზოლში დააჭირე თავსატეხის ხატულას და მიამაგრე Mirrorly." },
+  "welcomeStep2": { "message": "აირჩიე, რას ხედავენ სხვები და როგორ ხედავ შენ საკუთარ თავს." },
+  "welcomeStep3": { "message": "თუ Google Meet ან Zoom უკვე გახსნილია, განაახლე ის გვერდი." },
+  "welcomeZoom": { "message": "მუშაობს Google Meet-სა და Zoom-ის ვებ-ვერსიაში. Zoom-ის კომპიუტერული აპლიკაცია მალე დაემატება." },
+  "welcomePrivacy": { "message": "ყველაფერი შენს კომპიუტერში ხდება. Mirrorly არც ვიდეოს და არც მონაცემებს არსად აგზავნის." }
+}
